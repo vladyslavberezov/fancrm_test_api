@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    build: .
+    image: custommysql:latest
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test
+      MYSQL_USER: user
+      MYSQL_PASSWORD: admin
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
