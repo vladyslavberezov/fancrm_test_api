@@ -4,6 +4,8 @@ First a small clarification , I used forwardRef() only to make 1 method work, bu
 and should never be done this way.
 Envs included too only for easy use
 
+All endpoints store in app controller
+
 ## Installation
 
 ```bash
